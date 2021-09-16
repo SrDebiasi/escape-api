@@ -1,0 +1,22 @@
+--update
+git push heroku master
+
+-db pass
+heroku pg:credentials:url DATABASE
+
+-- login no heroku
+heroku login
+-- do login on browser
+
+-- migrate
+heroku php artisan migrate
+
+-- steps to new project
+-- clone from git
+-- enter the path an use
+heroku create <name_app>
+--and push
+
+--to download the packages
+--using  more->run console, heroku run:npm install 
+--heroku restart (only fro dynos, didnt work to rebuild app)
